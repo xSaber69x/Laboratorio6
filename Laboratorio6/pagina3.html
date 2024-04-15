@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<TITLE>PAGINA 3</TITLE>
+</HEAD>
+<CENTER><H4 style="color: orange;">ELIGE UNA OPCIÓN PARA NAVEGAR</H4>
+<nav>
+<ul class="nav-menu">
+<H5>
+<li><a href="LABORATORIO6.html" class="active">Inicio</a></li>
+<li><a href="pagina1.html">Página 1</a></li>
+<li><a href="pagina2.html">Página 2</a></li>
+</H5>
+</ul>
+</nav>
+<style>
+        #advice {
+            color: orange; /* Establece el color de texto a naranja */
+        }
+body {
+background-image: url('FOGO.jpg');
+background-repeat: no-repeat;
+background-size: cover;}
+</style>
+<h3 style="color: orange;">Si te a gustado las demas secciones de la pagina y no sabes por juego comenzar, aparte de los recomendados, te recomiendo personalmente ver este video:</h3>
+<a href="https://www.youtube.com/watch?v=ed4cqGN8XW8&pp=ygUXanVlZ29zIGRlIGxhIHNhZ2Egc291bHM%3D" class="d-inline-flex focus-ring py-1 px-2 text-decoration-none border rounded-2" style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), .25)">
+  VIDEO
+</a>
+</br>
+<h3 style="color: orange;">Como ultimas recomendaciones personales recomendare hobbies a realizar para acompañarlos con estos juegos</h3>
+<select class="form-select" aria-label="Default select example" onchange="updateAdvice()">
+  <option value="">Seleccione un consejo...</option>
+  <option value="1">🌟 HIDRATARTE</option>
+  <option value="2">✌️ TOMARLO CON CALMA</option>
+  <option value="3">🎉 FESTEJAR LAS VICTORIAS & APRENDER DE DERROTAS</option>
+</select>
+
+<div id="advice">Elige un consejo de la lista para leer más sobre él.</div>
+
+<script>
+function updateAdvice() {
+    var select = document.querySelector('.form-select');
+    var advice = document.getElementById('advice');
+    switch (select.value) {
+        case '1':
+            advice.innerHTML = "Mantente hidratado: Bebe agua regularmente para mantener tu concentración.";
+            break;
+        case '2':
+            advice.innerHTML = "Tomarlo con calma: Toma descansos y aprende de cada intento para mejorar tu juego.";
+            break;
+        case '3':
+            advice.innerHTML = "Celebra las victorias y aprende de las derrotas: Cada paso es un aprendizaje en la saga Souls.";
+            break;
+        default:
+            advice.innerHTML = "Elige un consejo de la lista para leer más sobre él.";
+            break;
+    }
+}
+</script>
+<IMG SRC="HIDRATARSE.jpg" ALIGN="CENTER" WIDTH="300" HEIGHT="300">
+<IMG SRC="CALMA.jpg" ALIGN="CENTER" WIDTH="300" HEIGHT="300">
+<IMG SRC="FIESTA.jpeg" ALIGN="CENTER" WIDTH="300" HEIGHT="300">
+</CENTER>
+</BODY>
+</HTML>
